@@ -1,0 +1,4 @@
+E:\YinLei\YinLeiWeb\Common.BLL\bin\Release\Common.BLL.dll
+E:\YinLei\YinLeiWeb\Common.BLL\bin\Release\Common.BLL.pdb
+E:\YinLei\YinLeiWeb\Common.BLL\obj\Release\Common.BLL.dll
+E:\YinLei\YinLeiWeb\Common.BLL\obj\Release\Common.BLL.pdb

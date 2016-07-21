@@ -1,0 +1,57 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>Yin Lei's Photo</title>
+    <link href="~/Content/css/photo.css" type="text/css" rel="stylesheet" />
+    <script src="~/Scripts/photo.js"></script>
+</head>
+<body>
+    <div id="screen">
+        <div id="command">
+            <h2>试着留住过去</h2>
+            <p>却只能成为回忆</p>
+            <div id="bar"></div>
+        </div>
+        <div id="urlInfo"></div>
+    </div>
+
+    <script type="text/javascript">
+        setTimeout(function () {
+            m3D.init(
+                [
+                    { src: '1.jpg', url: 'http://www.yinlei0725.cn', title: '第一张', color: '#fff' },
+                    { src: '2.jpg' },
+                    { src: '3.jpg' },
+                    { src: '4.jpg' },
+                    { src: '5.jpg' },
+                    { src: '6.jpg' },
+                    { src: '7.jpg' },
+                    { src: '8.jpg' },
+                    { src: '9.jpg' },
+                    { src: '10.jpg' },
+                    { src: '11.jpg', url: 'http://www.yinlei0725.cn', title: '第二张', color: '#fff' },
+                    { src: '12.jpg' },
+                    { src: '13.jpg' },
+                    { src: '14.jpg' },
+                    { src: '15.jpg', url: 'http://www.yinlei0725.cn', title: '第二张', color: '#fff' },
+                    { src: '16.jpg' },
+                    { src: '17.jpg' },
+                    { src: '18.jpg' },
+                    { src: '19.jpg' },
+                    { src: '20.jpg' },
+                    { src: '21.jpg', url: 'http://www.yinlei0725.cn', title: '第三张', color: '#fff' },
+                    { src: '25.jpg' },
+                    { src: '23.jpg' },
+                    { src: '25.jpg' },
+                ]
+            );
+        }, 500);
+    </script>
+</body>
+</html>

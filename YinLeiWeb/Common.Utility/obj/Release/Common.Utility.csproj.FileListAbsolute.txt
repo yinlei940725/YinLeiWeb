@@ -1,0 +1,4 @@
+E:\YinLei\YinLeiWeb\Common.Utility\bin\Release\Common.Utility.dll
+E:\YinLei\YinLeiWeb\Common.Utility\bin\Release\Common.Utility.pdb
+E:\YinLei\YinLeiWeb\Common.Utility\obj\Release\Common.Utility.dll
+E:\YinLei\YinLeiWeb\Common.Utility\obj\Release\Common.Utility.pdb

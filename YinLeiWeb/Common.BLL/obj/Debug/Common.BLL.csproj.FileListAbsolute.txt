@@ -1,0 +1,5 @@
+E:\YinLei\YinLeiWeb\Common.BLL\bin\Debug\Common.BLL.dll
+E:\YinLei\YinLeiWeb\Common.BLL\bin\Debug\Common.BLL.pdb
+E:\YinLei\YinLeiWeb\Common.BLL\obj\Debug\Common.BLL.dll
+E:\YinLei\YinLeiWeb\Common.BLL\obj\Debug\Common.BLL.pdb
+E:\YinLei\YinLeiWeb\Common.BLL\obj\Debug\Common.BLL.csprojResolveAssemblyReference.cache

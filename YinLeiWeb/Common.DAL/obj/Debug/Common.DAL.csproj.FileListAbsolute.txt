@@ -1,0 +1,5 @@
+E:\YinLei\YinLeiWeb\Common.DAL\bin\Debug\Common.DAL.dll
+E:\YinLei\YinLeiWeb\Common.DAL\bin\Debug\Common.DAL.pdb
+E:\YinLei\YinLeiWeb\Common.DAL\obj\Debug\Common.DAL.csprojResolveAssemblyReference.cache
+E:\YinLei\YinLeiWeb\Common.DAL\obj\Debug\Common.DAL.dll
+E:\YinLei\YinLeiWeb\Common.DAL\obj\Debug\Common.DAL.pdb

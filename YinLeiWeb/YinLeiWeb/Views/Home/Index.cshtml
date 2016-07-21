@@ -1,0 +1,220 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>Yin Lei</title>
+    <link href="~/Content/css/home_index.css" type="text/css" rel="stylesheet" media="all" />
+    <script type="text/javascript">
+        var elements = ['article', 'nav', 'section', 'header', 'aside', 'footer'];
+        for (var i = elements.length - 1; i >= 0; i--) {
+            document.createElement(elements[i]);
+        }
+    </script>
+    
+</head>
+<body>
+    <header>
+        <a class="logo" href="~/Home/Index"></a>
+        <nav>
+            <ul id="menu_list">
+                <li class="active"><a href="~/Home/Index">主 页</a></li>
+                <li><a href="~/About/Index">简 历</a></li>
+                <li><a href="~/About/Photo">关 于</a></li>
+                <li><a href="~/About/Message">留 言</a></li>
+            </ul>
+            <ol id="menu_btn">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ol>
+        </nav>
+    </header>
+    <section id="carousel" class="section-one">
+        <span class="carousel-prev">&lt</span>
+        <span class="carousel-next">&gt</span>
+        <div class="carousel-content">
+            <ul id="slide">
+                <li onclick="javascript:window.location.href = '../Home/Index';"></li>
+                <li onclick="javascript:window.location.href = '../About/Index';"></li>
+                <li onclick="javascript:window.location.href = '../About/Photo';"></li>
+                <li onclick="javascript:window.location.href = '../About/Message';"></li>
+            </ul>
+            <div class="carousel-index">
+                <ul id="slide_index">
+                    <li class="on-index"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+        
+    </section>
+   
+    <section id="timeline" class="section-two">
+        <div class="timeline-block">
+            <div class="timeline-mark">
+            </div>
+            <div class="timeline-content" id="data1">
+                <div class="content-title">
+                    <h3></h3>
+                </div>
+                <div class="content-body">
+                    <pre></pre>
+                </div>
+                <div class="content-date">
+                    <time></time>
+                </div>
+            </div>
+        </div>
+        <div class="timeline-block">
+            <div class="timeline-mark">
+            </div>
+            <div class="timeline-content" id="data2">
+                <div class="content-title">
+                    <h3></h3>
+                </div>
+                <div class="content-body">
+                    <pre></pre>
+                </div>
+                <div class="content-date">
+                    <time></time>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+
+    </footer>
+    <script src="~/Scripts/segment.min.js"></script>
+    <script src="~/Scripts/d3-ease.v0.6.js"></script>
+    <script src="~/Scripts/letters.js"></script>
+    <script src="~/Content/json/home_index.js"></script>
+    <script>
+        window.onload = function () {
+            //字体动画
+            var el = document.querySelector('.logo');
+            el.textContent = "Yinlei";
+            //每个选项可以定义为单个也可以定义为数组 
+            var options = {
+                size: 50,         // 字体大小，决定文字的高度，px 
+                weight: 10,         // 粗体，px 
+                rounded: true,    // 字母结尾圆角 
+                color: ['white'],  // 字体颜色 
+                duration: 1,       // 每个字母的动画展示时长 (seconds) 
+                delay: [0, 0.1],  // 每个字母间的动画延时 
+                fade: 0.5,         // 渐显效果的时长(seconds) 
+                easing: d3_ease.easeCubicInOut.ease,   // 缓冲动画效果 
+                individualDelays: false     // 默认false，如果设置成false，则动画效果会从左到右过度展示，如果是true，字母动画效果是同步展示 
+            };
+            var myText = new Letters(el, options);
+            myText.show();
+            el.onmouseover = function () {
+                myText.show();
+            }
+
+
+            //轮播
+            var cur = 0;    //当前轮播索引
+            var timer = null;
+            var slide_chlirens = document.getElementById("slide").getElementsByTagName("li");
+            var indexs = document.getElementById("slide_index").getElementsByTagName("li");
+
+            for (var i = 0; i < slide_chlirens.length; i++) {
+                slide_chlirens[i].index = i;
+                indexs[i].index = i;
+
+                indexs[i].onmouseover = function () {
+                    if (timer)
+                        clearInterval(timer);
+                    cur = this.index;
+                    changeSlide(cur);
+                }
+
+                indexs[i].onmouseout = function () {
+                    autoSlide(this.index);
+                }
+            }
+            
+            function changeSlide(index) {
+                if (index > 3)
+                    cur = index = 0;
+                if (index < 0)
+                    cur = index = 3;
+                for (var j = 0; j < indexs.length; j++) {
+                    indexs[j].className = "";
+                }
+                indexs[index].className = "on-index";
+                for (var k = 0; k < slide_chlirens.length; k++) {
+                    slide_chlirens[k].style.display = "none";
+                }
+                slide_chlirens[index].style.display = "block";
+            }
+
+            autoSlide(cur);
+            function autoSlide(cur) {
+                timer = setInterval(function () {
+                    cur++;
+                    if (cur > 3)
+                        cur = 0;
+                    changeSlide(cur);
+                    
+                }, 3000);
+            }
+            //鼠标移入轮播区域
+            document.getElementById("slide").onmouseover = function () {
+                if (timer)
+                    clearInterval(timer);
+            };
+            //鼠标移出轮播区域
+            document.getElementById("slide").onmouseout = function () {
+                autoSlide(cur);
+            }
+            //向左轮播
+            document.getElementsByClassName("carousel-prev")[0].onclick = function () {
+                cur--;
+                if (timer)
+                    clearInterval(timer);
+                changeSlide(cur);
+            }
+            //向右轮播
+            document.getElementsByClassName("carousel-next")[0].onclick = function () {
+                cur++;
+                if (timer)
+                    clearInterval(timer);
+                changeSlide(cur);
+            }
+            //菜单按钮
+            document.getElementById("menu_btn").className = "menu_btn";
+            document.getElementById("menu_btn").onclick = function () {
+                if (document.getElementById("menu_list").className == "menu_list_show")
+                    document.getElementById("menu_list").className = "menu_list_hide";
+                else
+                    document.getElementById("menu_list").className = "menu_list_show";
+            }
+            //时间轴排序
+            //var timeline_blocks = document.getElementsByClassName("timeline-block");
+            //if (timeline_blocks[0].offsetHeight > 200) {
+            //    timeline_blocks[1].style.marginTop=-timeline_blocks[0].offsetHeight+100+"px";
+            //}
+            //alert(timeline_blocks[0].offsetHeight);
+            
+            document.getElementById("data1").getElementsByClassName("content-title")[0].innerHTML = "<h3>" + data.data1.title + "</h3>";
+            document.getElementById("data1").getElementsByClassName("content-body")[0].innerHTML = "<p>" + data.data1.content + "</p>";
+            document.getElementById("data1").getElementsByClassName("content-date")[0].innerHTML = "<time>" + data.data1.time + "</time>";
+            document.getElementById("data2").getElementsByClassName("content-title")[0].innerHTML = "<h3>" + data.data2.title + "</h3>";
+            document.getElementById("data2").getElementsByClassName("content-body")[0].innerHTML = "<p>" + data.data2.content + "</p>";
+            document.getElementById("data2").getElementsByClassName("content-date")[0].innerHTML = "<time>" + data.data2.time + "</time>";
+
+        }
+        
+    </script>
+</body>
+</html>

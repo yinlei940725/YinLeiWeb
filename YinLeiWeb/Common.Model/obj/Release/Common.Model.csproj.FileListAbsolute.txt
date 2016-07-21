@@ -1,0 +1,9 @@
+E:\YinLei\YinLeiWeb\Common.Model\bin\Release\Common.Model.dll.config
+E:\YinLei\YinLeiWeb\Common.Model\bin\Release\Common.Model.dll
+E:\YinLei\YinLeiWeb\Common.Model\bin\Release\Common.Model.pdb
+E:\YinLei\YinLeiWeb\Common.Model\bin\Release\EntityFramework.dll
+E:\YinLei\YinLeiWeb\Common.Model\bin\Release\EntityFramework.xml
+E:\YinLei\YinLeiWeb\Common.Model\bin\Release\zh-Hans\EntityFramework.resources.dll
+E:\YinLei\YinLeiWeb\Common.Model\obj\Release\Common.Model.csprojResolveAssemblyReference.cache
+E:\YinLei\YinLeiWeb\Common.Model\obj\Release\Common.Model.dll
+E:\YinLei\YinLeiWeb\Common.Model\obj\Release\Common.Model.pdb
