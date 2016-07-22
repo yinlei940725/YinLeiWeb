@@ -3,3 +3,17 @@ E:\YinLei\YinLeiWeb\Common.DAL\bin\Debug\Common.DAL.pdb
 E:\YinLei\YinLeiWeb\Common.DAL\obj\Debug\Common.DAL.csprojResolveAssemblyReference.cache
 E:\YinLei\YinLeiWeb\Common.DAL\obj\Debug\Common.DAL.dll
 E:\YinLei\YinLeiWeb\Common.DAL\obj\Debug\Common.DAL.pdb
+E:\YinLeiWeb\YinLeiWeb\Common.DAL\bin\Debug\Common.DAL.dll.config
+E:\YinLeiWeb\YinLeiWeb\Common.DAL\bin\Debug\Common.DAL.dll
+E:\YinLeiWeb\YinLeiWeb\Common.DAL\bin\Debug\Common.DAL.pdb
+E:\YinLeiWeb\YinLeiWeb\Common.DAL\bin\Debug\Common.Model.dll
+E:\YinLeiWeb\YinLeiWeb\Common.DAL\bin\Debug\EntityFramework.dll
+E:\YinLeiWeb\YinLeiWeb\Common.DAL\bin\Debug\EntityFramework.SqlServer.dll
+E:\YinLeiWeb\YinLeiWeb\Common.DAL\bin\Debug\Common.Model.pdb
+E:\YinLeiWeb\YinLeiWeb\Common.DAL\bin\Debug\EntityFramework.xml
+E:\YinLeiWeb\YinLeiWeb\Common.DAL\bin\Debug\EntityFramework.SqlServer.xml
+E:\YinLeiWeb\YinLeiWeb\Common.DAL\bin\Debug\zh-Hans\EntityFramework.resources.dll
+E:\YinLeiWeb\YinLeiWeb\Common.DAL\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll
+E:\YinLeiWeb\YinLeiWeb\Common.DAL\obj\Debug\Common.DAL.csprojResolveAssemblyReference.cache
+E:\YinLeiWeb\YinLeiWeb\Common.DAL\obj\Debug\Common.DAL.dll
+E:\YinLeiWeb\YinLeiWeb\Common.DAL\obj\Debug\Common.DAL.pdb

@@ -3,3 +3,15 @@ E:\YinLei\YinLeiWeb\Common.Utility\bin\Debug\Common.Utility.pdb
 E:\YinLei\YinLeiWeb\Common.Utility\obj\Debug\Common.Utility.dll
 E:\YinLei\YinLeiWeb\Common.Utility\obj\Debug\Common.Utility.pdb
 E:\YinLei\YinLeiWeb\Common.Utility\obj\Debug\Common.Utility.csprojResolveAssemblyReference.cache
+E:\YinLeiWeb\YinLeiWeb\Common.Utility\bin\Debug\Common.Utility.dll.config
+E:\YinLeiWeb\YinLeiWeb\Common.Utility\bin\Debug\Common.Utility.dll
+E:\YinLeiWeb\YinLeiWeb\Common.Utility\bin\Debug\Common.Utility.pdb
+E:\YinLeiWeb\YinLeiWeb\Common.Utility\bin\Debug\EntityFramework.dll
+E:\YinLeiWeb\YinLeiWeb\Common.Utility\bin\Debug\EntityFramework.SqlServer.dll
+E:\YinLeiWeb\YinLeiWeb\Common.Utility\bin\Debug\EntityFramework.xml
+E:\YinLeiWeb\YinLeiWeb\Common.Utility\bin\Debug\EntityFramework.SqlServer.xml
+E:\YinLeiWeb\YinLeiWeb\Common.Utility\bin\Debug\zh-Hans\EntityFramework.resources.dll
+E:\YinLeiWeb\YinLeiWeb\Common.Utility\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll
+E:\YinLeiWeb\YinLeiWeb\Common.Utility\obj\Debug\Common.Utility.csprojResolveAssemblyReference.cache
+E:\YinLeiWeb\YinLeiWeb\Common.Utility\obj\Debug\Common.Utility.dll
+E:\YinLeiWeb\YinLeiWeb\Common.Utility\obj\Debug\Common.Utility.pdb

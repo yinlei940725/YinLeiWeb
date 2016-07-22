@@ -1,5 +1,4 @@
-﻿@model Common.Model.ViewModel.ResumeModel
-
+﻿@model Common.Model.Entitys.Resume
 @{
     Layout = null;
 }
@@ -34,12 +33,12 @@
                     </tr>
                     <tr>
                         <td style="width:70%;padding-left:20px;border-right:none">
-                            <h3>尹磊</h3><p>1994-7-25|男|未婚</p>
-                            <p><span>现居地:</span> 广州市天河区车陂</p>
-                            <p><span>籍贯:</span> 湖南省邵阳市</p>
-                            <p><span>手机:</span> 15521025350</p>
-                            <p><span>邮箱:</span> 963928480@qq.com</p>
-                            <p><span>求职状态:</span> 目前正在找工作</p>
+                            <h3>@Model.Name</h3><p>@Model.Birthday.ToString()|@Model.Sex|@Model.IsMarry?"已婚":"未婚"</p>
+                            <p><span>现居地:</span> @Model.Address</p>
+                            <p><span>籍贯:</span> @Model.Birthplace</p>
+                            <p><span>手机:</span> @Model.Phone</p>
+                            <p><span>邮箱:</span> @Model.Email</p>
+                            <p><span>求职状态:</span> @Model.JobStatus</p>
                         </td>
                         <td style="padding:20px 2px;border-left:none">
                             <img src="~/Content/images/portrait/tm-easy-profile3-min.JPG" alt="头像" class="img-responsive" title="尹磊的照片" />
@@ -79,8 +78,7 @@
                     </tr>
                     <tr>
                         <td colspan="2">
-                            <p class="typewriter">有责任心，认真完成上级安排工作，热爱编程，对科学技术有浓厚的兴趣。目前从事ASP.NET方面的工作，并对Web前端技术有着浓厚的兴趣，努力自学
-                                HTML5+CSS3+JavaSrcipt中。</p>
+                            <p class="typewriter">@Model.SelfEvaluate</p>
                         </td>
                     </tr>
                     <tr class="active">
@@ -129,7 +127,6 @@
     <script>  
         $(function () {
             $(".typewriter").typewriter();
-
             var canvas = document.getElementById("backcanvas");
             $.flowmolecule(canvas, null, null, 50, 2, "rgba(198, 47, 47, 1)", 50000, { r: 198, g: 47, b: 47 });
         });
