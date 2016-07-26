@@ -33,7 +33,7 @@
                     </tr>
                     <tr>
                         <td style="width:70%;padding-left:20px;border-right:none">
-                            <h3>@Model.Name</h3><p>@Model.Birthday.ToString()|@Model.Sex|@Model.IsMarry?"已婚":"未婚"</p>
+                            <h3>@Model.Name</h3><p>@Model.Birthday.Value.ToString("yyyy-MM")|@Model.Sex|@ViewBag.IsMarry</p>
                             <p><span>现居地:</span> @Model.Address</p>
                             <p><span>籍贯:</span> @Model.Birthplace</p>
                             <p><span>手机:</span> @Model.Phone</p>

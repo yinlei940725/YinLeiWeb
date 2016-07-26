@@ -32,6 +32,8 @@ namespace YinLeiWeb.Controllers
             //db.CreateDateBase();
             //db.Insert(model);
             model = db.GetResume(11);
+
+            ViewBag.IsMarry = model.IsMarry ? "已婚" : "未婚";
             return View(model);
         }
 
